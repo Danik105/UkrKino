@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Контакти</title>
+
+ <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-family: 'Arial', sans-serif;
+      font-size: 16px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+
+    .back-button:hover {
+      background-color: #555;
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fade-in-animation 0.5s ease-in forwards;
+    }
+
+    @keyframes fade-in-animation {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.body.classList.add("fade-in");
+    });
+  </script>
+</head>
+<body>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      font-family: 'Arial', sans-serif;
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .contact-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .contact-list li {
+      margin-bottom: 10px;
+    }
+    .contact-list li strong {
+      display: inline-block;
+      width: 100px;
+      font-weight: bold;
+    }
+
+    .contact-info {
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Контакти</h1>
+    <ul class="contact-list">
+      <li><strong>Телефон:</strong> <span class="contact-info">+1 234 567 890</span></li>
+      <li><strong>Email:</strong> <span class="contact-info">student1009@otfk.ukr.education</span></li>
+      <li><strong>Адреса:</strong> <span class="contact-info">вул. Прикладна, 123, м. Київ</span></li>
+    </ul>
+  <div class="container">
+      <!-- ... Код таблиці з розкладом фільмів ... -->
+    </table>
+    <a href="index.html" class="back-button">Повернутися на головну</a>
+  </div>
+  </div>
+</body>
+</html>

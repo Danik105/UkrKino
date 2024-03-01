@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Укр Кіно</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .fade-in {
+      opacity: 0;
+      animation: fade-in-animation 0.5s ease-in forwards;
+    }
+
+    @keyframes fade-in-animation {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.body.classList.add("fade-in");
+    });
+  </script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+.nav-list li a {
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      background-color: #333;
+      transition: background-color 0.3s ease;
+    }
+h1 {
+      font-family: 'Arial', sans-serif;
+      font-size: 60px;
+      color: #fff;
+      text-align: left;
+      margin-top: 15px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-list {
+      margin-top: 40px;
+    }
+
+    .nav-list li a:hover {
+      background-color: #555;
+    }
+  </style>
+
+<script>
+    function redirectToContacts() {
+      window.location.href = "contacts.html";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>UkrKino</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="seans.html" id="schedule-button">Розклад фільмів</a></li>
+          <li><a href="seans.html">Ціни</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <div class="container">
+      <h2>Найкращі фільми в кінотеатрі</h2>
+      <p>Дізнайтеся про найновіші прем'єри та забронюйте квитки вже зараз!</p>
+      <a href="seans.html" class="btn">Забронювати квитки</a>
+    </div>
+  </section>
+
+  <section class="movies">
+    <div class="container">
+      <h2>Розклад фільмів</h2>
+      <div class="movie">
+        <img src="film1.jpg" alt="Фільм 1">
+        <div class="movie-info">
+          <h2>Людина-павук:<br> Павутина всесвітів (2023)</h2>
+          <p>Тривалість: 120 хв</p>
+        </div>
+      </div>
+      <div class="movie">
+        <img src="film2.jpg" alt="Фільм 2">
+        <div class="movie-info">
+          <h2>Елементи (2023)</h2>
+          <p>Тривалість: 105 хв</p>
+        </div>
+      </div>
+      <!-- Додайте більше фільмів тут -->
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Кінотеатр. Усі права захищені.</p>
+    </div>
+  </footer>
+</body>
+</html>

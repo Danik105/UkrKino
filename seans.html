@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Розклад фільмів</title>
+ <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .fade-in {
+      opacity: 0;
+      animation: fade-in-animation 0.5s ease-in forwards;
+    }
+
+    @keyframes fade-in-animation {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.body.classList.add("fade-in");
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+
+  </div>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      font-family: 'Arial', sans-serif;
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    .schedule-table th, .schedule-table td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .schedule-table th {
+      font-weight: bold;
+    }
+    .order-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-family: 'Arial', sans-serif;
+      font-size: 16px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .order-button:hover {
+      background-color: #555;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-family: 'Arial', sans-serif;
+      font-size: 16px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+
+    .back-button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Розклад фільмів</h1>
+    <table class="schedule-table">
+      <tr>
+        <th>Фільм</th>
+        <th>Час показу</th>
+        <th>Ціна</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>Людина-павук: Павутина всесвітів (2023</td>
+        <td>15:00</td>
+        <td>100 грн</td>
+        <td><a href="#" class="order-button">Замовити квиток</a></td>
+      </tr>
+      <tr>
+        <td>Елементи (2023)</td>
+        <td>18:30</td>
+        <td>120 грн</td>
+        <td><a href="#" class="order-button">Замовити квиток</a></td>
+      </tr>
+      <tr>
+    </table>
+    <a href="index.html" class="back-button">Повернутися на головну</a>
+  </div>
+</body>
+</html>
